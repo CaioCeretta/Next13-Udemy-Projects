@@ -1,24 +1,37 @@
-import Link from "next/link";
-import MenuItem from "./MenuItem";
-import { AiFillHome, AiFillInfoCircle } from 'react-icons/ai'
-import { BsFillInfoCircleFill} from 'react-icons/bs'
+import Link from 'next/link'
+import { AiFillHome } from 'react-icons/ai'
+import { BsFillInfoCircleFill } from 'react-icons/bs'
+import DarkModeSwitch from './DarkModeSwitch'
+import MenuItem from './MenuItem'
 
 export default function Header() {
   return (
-    <div className="flex py-6 justify-between mx-2 max-w-6xl sm:mx-auto items-center">
+    <div className="mx-2 flex max-w-6xl items-center justify-between py-6 sm:mx-auto">
       <div className="flex">
-        <MenuItem title={'Home'} address="/" icon={<AiFillHome className="text-2xl sm:hidden mx-4"  />} about="blu"/>
-        <MenuItem title={'About'} address="/about" icon={<BsFillInfoCircleFill className="text-2xl sm:hidden mx-4"  />} about="blu"/>
+        <MenuItem
+          title={'Home'}
+          address="/"
+          icon={<AiFillHome className="mx-4 text-2xl sm:hidden" />}
+          about="blu"
+        />
+        <MenuItem
+          title={'About'}
+          address="/about"
+          icon={<BsFillInfoCircleFill className="mx-4 text-2xl sm:hidden" />}
+          about="blu"
+        />
       </div>
-      <div className="">
+      <div className="flex items-center space-x-5">
+        <DarkModeSwitch />
         <Link href="/">
           <h2 className="text-2xl ">
-          <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1">IMDb</span>
-          <span className="text-x1 hidden sm:inline">Clone</span>
+            <span className="mr-1 rounded-lg bg-amber-500 px-2 py-1 font-bold">
+              IMDb
+            </span>
+            <span className="text-x1 hidden sm:inline">Clone</span>
           </h2>
         </Link>
       </div>
-
     </div>
   )
 }
