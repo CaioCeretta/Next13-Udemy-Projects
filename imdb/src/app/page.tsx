@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -9,7 +8,7 @@ export default function Home() {
       </Head>
 
       <div>
-        <h1>Home</h1>
+        <h1 className='text-red-900 font-san s'>Home</h1>
       </div>
     </main>
   )
