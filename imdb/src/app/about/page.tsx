@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className="mx-auto max-w-6xl space-y-4">
+    <div className="mx-auto max-w-6xl space-y-4 p-10">
       <h1 className="text-2xl font-medium text-amber-600">About</h1>
       <p>
         Welcome to our movie database website! We are a team of passionate movie

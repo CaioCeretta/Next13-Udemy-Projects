@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from 'next/head'
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       </Head>
 
       <div>
-        <h1 className='text-red-900 font-san s'>Home</h1>
+        <h1 className="font-sans text-red-900">Home</h1>
       </div>
     </main>
   )
