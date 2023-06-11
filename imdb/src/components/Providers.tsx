@@ -2,7 +2,6 @@
 
 import { ThemeProvider } from 'next-themes'
 import React from 'react'
-
 interface ProviderProps {
   children: React.ReactNode
 }
