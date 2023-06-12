@@ -17,7 +17,7 @@ interface ResultsProps {
 }
 
 export default function Results({ results }: ResultsProps) {
-  console.log(results)
+  // console.log(results)
   return (
     <div className="padding-x-4 mx-auto max-w-6xl sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
       {results.map((result) => {

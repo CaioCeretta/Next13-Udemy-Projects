@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { BsFillHandThumbsUpFill } from 'react-icons/bs'
+import { FiThumbsUp } from 'react-icons/fi'
 
 interface MovieCardProps {
   movie: {
@@ -43,8 +43,7 @@ export default function MovieCard({ movie }: MovieCardProps) {
         <p>
           <span className="px-2">{movie.release_date}</span>
           <span>
-            {movie.vote_count}{' '}
-            <BsFillHandThumbsUpFill className="ml-3 mr-1 inline h-5" />
+            <FiThumbsUp className="ml-3 mr-1 inline h-5" /> {movie.vote_count}
           </span>
         </p>
       </div>
