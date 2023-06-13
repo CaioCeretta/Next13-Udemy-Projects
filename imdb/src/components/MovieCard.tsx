@@ -38,7 +38,7 @@ export default function MovieCard({ movie }: MovieCardProps) {
       <div className="p-2">
         <p className="text-md line-clamp-2">{movie.overview}</p>
         <h2 className="truncate py-1 text-lg font-bold">
-          {movie.title || result.name}
+          {movie.title || movie.name}
         </h2>
 
         <p>

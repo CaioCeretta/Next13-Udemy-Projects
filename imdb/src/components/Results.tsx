@@ -5,6 +5,7 @@ interface Result {
   adult: boolean
   id: string
   title: string
+  name: string
   overview: string
   release_date: string
   backdrop_path: string
