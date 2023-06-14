@@ -5,7 +5,6 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-      {/* Header Component */}
       <HomeHeader />
       {/* Body Component */}
       <div className="mt-24 flex flex-col items-center">
