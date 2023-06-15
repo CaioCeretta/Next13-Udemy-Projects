@@ -13,7 +13,7 @@ export default function SearchHeader() {
 
   return (
     <header className="sticky top-0 bg-white">
-      <div className="width-full padding-6 flex items-center justify-between">
+      <div className="width-full flex items-center justify-between p-6">
         <Link href={'/'}>
           <Image src={logo} width={120} height={40} alt="logo" />
         </Link>
