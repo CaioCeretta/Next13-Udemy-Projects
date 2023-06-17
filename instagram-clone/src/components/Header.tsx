@@ -8,10 +8,9 @@ import { HomeIcon } from '@heroicons/react/24/solid'
 
 export default function Header() {
   return (
-    <header>
-      {/* Left */}
-
-      <div className="mx-4 mx-auto flex max-w-6xl flex-row items-center justify-between">
+    <header className="z-index-30 sticky top-0 border-b bg-white shadow-sm ">
+      <div className="mx-4 flex max-w-6xl flex-row items-center justify-between xl:mx-auto">
+        {/* Left */}
         <div className="relative hidden h-24 w-24 cursor-pointer lg:inline-grid">
           <Image
             fill
@@ -28,7 +27,7 @@ export default function Header() {
             className="object-contain"
           />
         </div>
-        {/* Middle */}
+        {/* Mid */}
         <div className="relative">
           <div className="absolute top-2">
             <MagnifyingGlassIcon className="h-5 text-gray-500" />
@@ -38,6 +37,7 @@ export default function Header() {
             placeholder="Search"
             className="rounded-md border-gray-500 bg-gray-50 pl-10 text-sm focus:ring-black"
           />
+          <p></p>
         </div>
         {/* {Right} */}
         <div className="flex items-center space-x-4">
