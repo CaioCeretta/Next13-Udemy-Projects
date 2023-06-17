@@ -5,6 +5,7 @@ const nextConfig = {
       'upload.wikimedia.org',
       'www.jennexplores.com',
       'www.freepnglogos.com',
+      'i.pravatar.cc',
     ],
   },
 }
