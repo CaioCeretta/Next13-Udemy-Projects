@@ -1,12 +1,17 @@
 import Image from 'next/image'
 import React from 'react'
+import {
+  MagnifyingGlassIcon,
+  PlusCircleIcon,
+} from '@heroicons/react/24/outline'
+import { HomeIcon } from '@heroicons/react/24/solid'
 
 export default function Header() {
   return (
     <header>
       {/* Left */}
 
-      <div className="flex max-w-6xl flex-row items-center justify-between">
+      <div className="mx-4 mx-auto flex max-w-6xl flex-row items-center justify-between">
         <div className="relative hidden h-24 w-24 cursor-pointer lg:inline-grid">
           <Image
             fill
@@ -23,10 +28,27 @@ export default function Header() {
             className="object-contain"
           />
         </div>
-
         {/* Middle */}
+        <div className="relative">
+          <div className="absolute top-2">
+            <MagnifyingGlassIcon className="h-5 text-gray-500" />
+          </div>
+          <input
+            type="text"
+            placeholder="Search"
+            className="rounded-md border-gray-500 bg-gray-50 pl-10 text-sm focus:ring-black"
+          />
+        </div>
         {/* {Right} */}
-        <div>Right Side</div>
+        <div className="flex items-center space-x-4">
+          <HomeIcon className="hidden h-6 cursor-pointer transition-transform duration-200 ease-out hover:scale-125 md:inline" />
+          <PlusCircleIcon className="h-6 cursor-pointer transition-transform duration-200 ease-out hover:scale-125" />
+          <img
+            className="h-10 cursor-pointer rounded-full"
+            src="https://images.mubicdn.net/images/cast_member/28156/cache-4095-1478101707/image-w856.jpg?size=800x"
+            alt="eu"
+          />
+        </div>
       </div>
     </header>
   )
