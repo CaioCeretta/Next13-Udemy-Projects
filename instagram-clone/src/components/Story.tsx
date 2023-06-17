@@ -11,16 +11,13 @@ interface UserProps {
 
 export default function Story({ user }: UserProps) {
   return (
-    <div className="flex">
-      <p>{user.id}</p>
-      <Image
+    <div className="">
+      <img
         src={user.img}
-        width={48}
-        height={12}
-        className="object-contain"
+        className="h-14 cursor-pointer rounded-full border-2 border-red-500 object-contain  p-[1.5px] transition-transform hover:scale-110"
         alt={user.username}
       />
-      <p>{user.username}</p>
+      <p className="text-x w-14 truncate">{user.username}</p>
     </div>
   )
 }

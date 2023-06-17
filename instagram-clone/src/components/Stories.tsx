@@ -24,7 +24,7 @@ export default function Stories() {
     setStoryUsers(storiesUser)
   }, [])
   return (
-    <div>
+    <div className="flex space-x-3 overflow-x-scroll rounded-sm border border-gray-200 bg-white p-6 scrollbar-none">
       {storyUsers.map((user) => (
         <Story key={user.id} user={user} />
       ))}
