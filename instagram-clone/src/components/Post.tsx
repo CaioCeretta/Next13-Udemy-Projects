@@ -1,4 +1,9 @@
-import { EllipsisHorizontalIcon } from '@heroicons/react/24/outline'
+import {
+  BookmarkIcon,
+  ChatBubbleOvalLeftEllipsisIcon,
+  EllipsisHorizontalIcon,
+  HeartIcon,
+} from '@heroicons/react/24/outline'
 
 interface PostProps {
   post: {
@@ -24,12 +29,19 @@ export default function Post({
         <p className="flex-1 p-3 font-bold">{username}</p>
         <EllipsisHorizontalIcon className="h-5 w-5" />
       </div>
-
       {/* Image/Caption */}
-      <div className="flex flex-col items-center">
-        <img className="obj.cover w-full" src={img} alt="" />
-        <p>{caption}</p>
+
+      <img className="obj.cover w-full" src={img} alt="" />
+
+      {/* Post Button */}
+      <div className="flex justify-between px-4 pt-4">
+        <div className="flex">
+          <HeartIcon className="btn" />
+          <ChatBubbleOvalLeftEllipsisIcon className="btn" />
+        </div>
+        <BookmarkIcon className="btn" />
       </div>
+      <p>{caption}</p>
     </div>
   )
 }
