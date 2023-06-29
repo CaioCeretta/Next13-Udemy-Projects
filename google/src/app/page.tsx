@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <HomeHeader />
       {/* Body Component */}
-      <div className="mt-24 flex flex-col items-center">
+      <div className="mt-24  flex flex-col items-center ">
         <Image
           width={300}
           height={100}

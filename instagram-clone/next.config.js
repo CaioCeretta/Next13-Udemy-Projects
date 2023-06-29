@@ -6,6 +6,7 @@ const nextConfig = {
       'www.jennexplores.com',
       'www.freepnglogos.com',
       'i.pravatar.cc',
+      'opceve.com.br',
     ],
   },
 }

@@ -59,7 +59,7 @@ export default function HomeSearch() {
 
         <button
           onClick={randomSearch}
-          className="btn disabled:opacity-0.8 flex items-center justify-center"
+          className="btn disabled:opacity-0.8 flex items-center  justify-center"
           disabled={randomSearchLoading}
         >
           {randomSearchLoading ? (

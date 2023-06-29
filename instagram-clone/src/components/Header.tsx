@@ -5,7 +5,7 @@ import {
   PlusCircleIcon,
 } from '@heroicons/react/24/outline'
 import { HomeIcon } from '@heroicons/react/24/solid'
-
+import Link from 'next/link'
 export default function Header() {
   return (
     <header className="z-index-30 sticky top-0 border-b bg-white shadow-sm ">
@@ -42,7 +42,10 @@ export default function Header() {
         {/* {Right} */}
         <div className="flex items-center space-x-4">
           <HomeIcon className="hidden h-6 cursor-pointer transition-transform duration-200 ease-out hover:scale-125 md:inline" />
-          <PlusCircleIcon className="h-6 cursor-pointer transition-transform duration-200 ease-out hover:scale-125" />
+
+          <Link href="/auth/signin">
+            <PlusCircleIcon className="h-6 cursor-pointer transition-transform duration-200 ease-out hover:scale-125" />
+          </Link>
           <img
             className="h-10 cursor-pointer rounded-full"
             src="https://images.mubicdn.net/images/cast_member/28156/cache-4095-1478101707/image-w856.jpg?size=800x"
